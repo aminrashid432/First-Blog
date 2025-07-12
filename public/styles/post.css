@@ -1,0 +1,45 @@
+.container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+    .center{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading{
+        padding: 20px;
+        font-size: 100px;
+        background-color: #f0f0f0;
+        text-align: center;
+    }
+
+    @media (max-width: 600px) {
+  .heading {
+    font-size: 40px; /* Shrink heading text on phones */
+    padding: 15px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .center {
+    width: 100%;
+  }
+
+  textarea {
+    width: 90%; /* Makes text area more manageable on small screens */
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}

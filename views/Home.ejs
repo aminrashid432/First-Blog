@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Blog</title>
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  
+    <%- include("partials/header") %>
+    <hr>
+
+    <ul>
+     <% posts.forEach((post, index) => { %> <!-- This line starts a loop in EJS that goes through each post in the posts array.
+                                                It runs the code inside the loop for every post, giving you both the post content (post) and its position 
+                                                in the list (index).
+                                                Your posts.ejs file is linked to the server through this line in your server code:
+                                                res.render("post");
+                                                all these endpoints pointing to posts has access to the post variable 
+                                                This gets its functionality from the index.ejs where the for each loop is 
+                                            -->
+
+
+    <%= post %>  <!--  this outputs the posts one by one in the "/" endpoint -->
+    <form action="/delete" method="POST" style="display:inline;">
+    <input type="hidden" name="index" value="<%= index %>">
+    <button type="submit">Delete</button>
+    </form>
+    </li>
+    <% }); %>
+    </ul>
+
+    
+    <%- include("partials/footer") %>
+
+</body>
+</html>

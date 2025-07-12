@@ -1,0 +1,52 @@
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+$("p")           // Selects all `<p>` tags
+$(".class-name") // Selects elements with a class
+$("#id-name")    // Selects the element with a specific ID
+
+$("#demo").text("New text");   // Changes plain text
+$("#demo").html("<b>Bold</b>"); // Changes inner HTML
+
+$("p").css("color", "red"); // Changes CSS property
+
+$("#demo").hide();   // Hides the element
+$("#demo").show();   // Shows the element
+$("#demo").toggle(); // Toggles visibility
+
+$("p").addClass("highlight");
+$("p").removeClass("highlight");
+$("p").toggleClass("highlight");
+
+$("#btn").click(function() {
+  alert("Button clicked!");
+});
+
+$("#demo").hover(
+  function() { $(this).css("color", "blue"); },  // Mouse enter
+  function() { $(this).css("color", "black"); }  // Mouse leave
+);
+
+let val = $("#input").val();           // Get value
+$("#input").val("New value");          // Set value
+
+
+$("#box").fadeIn();
+$("#box").fadeOut();
+$("#box").slideUp();
+$("#box").slideDown();
+
+$("li").each(function(index, element) {
+  console.log($(this).text());
+});
+
+
+$("ul").append("<li>Item at End</li>");
+$("ul").prepend("<li>Item at Start</li>");
+
+$("#demo").remove(); // Deletes element from DOM
+
+$("#demo").css("color", "red").slideUp(2000).slideDown(2000); //chaining
+
+$(function() {
+  // Runs when DOM is ready (short version)
+});
