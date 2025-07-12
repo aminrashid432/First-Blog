@@ -981,3 +981,90 @@ Changes to be committed:
         new file:   zGUIDE.txt
         new file:   zImports.txt
         new file:   zJQUERY.txt
+
+        aminrashid@Amins-MacBook-Pro-2 zBlog % git log
+commit 011b6bf904a87641f4b0616633602ef464f04dc7 (HEAD -> master)
+Author: Amin Rashid <aminrashid@Amins-MacBook-Pro-2.local>
+Date:   Sat Jul 12 14:44:06 2025 -0700
+
+    Complete Program
+
+commit 12acb8bed3d21292f64d223fc5b8921659e994a9
+Author: Amin Rashid <aminrashid@Amins-MacBook-Pro-2.local>
+Date:   Sat Jul 12 14:38:16 2025 -0700
+
+    Completed server
+aminrashid@Amins-MacBook-Pro-2 zBlog % git status
+On branch master
+nothing to commit, working tree clean
+aminrashid@Amins-MacBook-Pro-2 zBlog % git log
+commit 011b6bf904a87641f4b0616633602ef464f04dc7 (HEAD -> master)
+Author: Amin Rashid <aminrashid@Amins-MacBook-Pro-2.local>
+Date:   Sat Jul 12 14:44:06 2025 -0700
+
+    Complete Program
+
+commit 12acb8bed3d21292f64d223fc5b8921659e994a9
+Author: Amin Rashid <aminrashid@Amins-MacBook-Pro-2.local>
+Date:   Sat Jul 12 14:38:16 2025 -0700
+
+    Completed server
+aminrashid@Amins-MacBook-Pro-2 zBlog % git remote add origin https://github.com/aminrashid432/First-Blog.git
+aminrashid@Amins-MacBook-Pro-2 zBlog % git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/aminrashid432/First-Blog.git'
+aminrashid@Amins-MacBook-Pro-2 zBlog % git branch -M main  
+aminrashid@Amins-MacBook-Pro-2 zBlog % git push -u origin main
+Enumerating objects: 982, done.
+Counting objects: 100% (982/982), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (917/917), done.
+Writing objects: 100% (982/982), 1.05 MiB | 10.34 MiB/s, done.
+Total 982 (delta 166), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (166/166), done.
+To https://github.com/aminrashid432/First-Blog.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+aminrashid@Amins-MacBook-Pro-2 zBlog % 
+
+aminrashid@Amins-MacBook-Pro-2 zBlog % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   zGIT.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+aminrashid@Amins-MacBook-Pro-2 zBlog % git add zGIT.txt
+aminrashid@Amins-MacBook-Pro-2 zBlog % git commit - "Pushing updated file to repository"
+error: pathspec '-' did not match any file(s) known to git
+error: pathspec 'Pushing updated file to repository' did not match any file(s) known to git
+aminrashid@Amins-MacBook-Pro-2 zBlog % git commit -m  "Pushing updated file to repository"
+[main 48c22e7] Pushing updated file to repository
+ Committer: Amin Rashid <aminrashid@Amins-MacBook-Pro-2.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 983 insertions(+)
+aminrashid@Amins-MacBook-Pro-2 zBlog % git push origin main
+
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 5.97 KiB | 5.97 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/aminrashid432/First-Blog.git
+   011b6bf..48c22e7  main -> main
