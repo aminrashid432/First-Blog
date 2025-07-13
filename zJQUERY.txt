@@ -50,3 +50,6 @@ $("#demo").css("color", "red").slideUp(2000).slideDown(2000); //chaining
 $(function() {
   // Runs when DOM is ready (short version)
 });
+
+
+I did something here!
